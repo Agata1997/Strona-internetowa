@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://wedding-lotus.com.pl/</loc>
+  <lastmod>2019-04-24T17:28:20+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://wedding-lotus.com.pl/index.html</loc>
+  <lastmod>2019-04-24T17:28:20+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://wedding-lotus.com.pl/about.html</loc>
+  <lastmod>2019-04-24T17:28:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://wedding-lotus.com.pl/contact.php</loc>
+  <lastmod>2019-05-31T19:39:04+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://wedding-lotus.com.pl/recommend.html</loc>
+  <lastmod>2019-04-24T20:06:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://wedding-lotus.com.pl/budgety.html</loc>
+  <lastmod>2019-04-24T17:28:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>

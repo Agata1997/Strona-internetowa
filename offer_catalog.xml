@@ -1,0 +1,38 @@
+<CATALOG>
+	<TYPE>
+		<LEITMOTIF>Alice in a Wonderland</LEITMOTIF>
+		<ENTERTAINMENTS>Dry Ice</ENTERTAINMENTS>
+		<FLOWERS>Cut</FLOWERS>
+		<COLOUR>Azure Blue</COLOUR>
+	</TYPE>
+	<TYPE>
+		<LEITMOTIF>The Snow Queen</LEITMOTIF>
+		<ENTERTAINMENTS>Bartender</ENTERTAINMENTS>
+		<FLOWERS>Artificial</FLOWERS>
+		<COLOUR>Beet Red</COLOUR>
+	</TYPE>
+	<TYPE>
+		<LEITMOTIF>Beach Fun</LEITMOTIF>
+		<ENTERTAINMENTS>Fireworks show</ENTERTAINMENTS>
+		<FLOWERS>Exotic</FLOWERS>
+		<COLOUR>Powder Pink</COLOUR>
+	</TYPE>
+	<TYPE>
+		<LEITMOTIF>King and his Queen</LEITMOTIF>
+		<ENTERTAINMENTS>Buffet with sweets</ENTERTAINMENTS>
+		<FLOWERS>Seasonal</FLOWERS>
+		<COLOUR>Sunny Yellow</COLOUR>
+	</TYPE>
+	<TYPE>
+		<LEITMOTIF>Tropical Festival</LEITMOTIF>
+		<ENTERTAINMENTS>Dance show</ENTERTAINMENTS>
+		<FLOWERS>Wild</FLOWERS>
+		<COLOUR>Elegant White</COLOUR>
+	</TYPE>
+	<TYPE>
+		<LEITMOTIF>And much more!</LEITMOTIF>
+		<ENTERTAINMENTS>And much more!</ENTERTAINMENTS>
+		<FLOWERS>And much more!</FLOWERS>
+		<COLOUR>And much more!</COLOUR>
+	</TYPE>
+</CATALOG>

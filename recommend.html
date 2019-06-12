@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <meta charset="UTF-8">
+        <title>Wedding Lotus</title>
+		
+		<link rel="apple-touch-icon" sizes="180x180" href="\strona\strona\resources\icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="\strona\strona\resources\icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="\strona\strona\resources\icons/favicon-16x16.png">
+		<link rel="manifest" href="resources/icons/site.webmanifest">
+		<link rel="mask-icon" href="resources/icons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="resources/icons/favicon.ico">
+		<meta name="msapplication-TileColor" content="#d9889e">
+		<meta name="msapplication-config" content="resources/icons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="row">
+                    <img src="resources/img/logo-white.png" alt="Wedding Lotus logo" class="logo">
+                    <img src="resources/img/logo.png" alt="Wedding Lotus logo" class="logo-black">
+                    <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
+                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Farewell unnecessary worries.<br>Welcome stress-free and perfectly organized events.</h1>
+            </div>
+            
+        </header>
+
+<style>
+table,th,td {
+    width: 80%;
+    margin: auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 30px;
+    table-layout: fixed
+    background: #ccc;
+    opacity: 0.6;
+    color: white;
+    margin-top: 40px;
+}
+th,td {
+    padding: 10px;
+    opacity: 0.9;
+    width: 25%;
+}
+.row
+{
+text-align: center;
+}
+button {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    background-color: #cf6a87;
+    border: 1px solid #cf6a87;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: inline-block;
+    margin: 0 auto;
+}
+</style>
+        
+<body>
+    
+<section class="section-testimonials">
+            <div class="row">
+                <h2>Our customers can't live without us</h2>
+                
+                <button type="button" onclick="loadXMLDoc()">Show the most popular choices!</button>
+                <table id="demo"></table>
+            </div>
+            
+</section>
+
+
+<script>
+function loadXMLDoc() {
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      myFunction(this);
+    }
+  };
+  xmlhttp.open("GET", "offer_catalog.xml", true);
+  xmlhttp.send();
+}
+function myFunction(xml) {
+  var i;
+  var xmlDoc = xml.responseXML;
+  var table="<tr><th>Leitmotif</th><th>Entertainments</th><th>Flowers</th><th>Dominant colour</th></tr>";
+  var x = xmlDoc.getElementsByTagName("TYPE");
+  for (i = 0; i <x.length; i++) { 
+    table += "<tr><td>" +
+    x[i].getElementsByTagName("LEITMOTIF")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("ENTERTAINMENTS")[0].childNodes[0].nodeValue +
+    "</td></td>"
+    x[i].getElementsByTagName("FLOWERS")[0].childNodes[0].nodeValue +
+    "</td><td>" +
+    x[i].getElementsByTagName("COLOUR")[0].childNodes[0].nodeValue +
+    "</td></tr>";
+  }
+  document.getElementById("demo").innerHTML = table;
+}
+</script>
+
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Main page</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="recommend.html">We recommend</a></li>
+                        <li><a href="budgety.html">Calculator</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/Lotus-Wedding-2155432721434655/?modal=admin_todo_tour" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/WeddingLotus" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                        <li><a href="https://plus.google.com/u/0/" target="_blank"><i class="ion-social-googleplus" ></i></a></li>
+                        <li><a href="https://www.instagram.com/lotus_weddings_events/" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Build with <i class="ion-ios-heart" style="color: #c34368; padding: 0 3px;"></i>, March 2019.
+                </p>
+            </div>
+        </footer>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+    
+    </body>  
+    
+</html>
+
